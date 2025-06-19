@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard Nhà Nấm</title>
+  <link rel="stylesheet" href="giaodien.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fas fa-mushroom"></i> Thông số quản lý nhà Nấm</h1>
+
+    <div class="section">
+      <div class="card temp-card">
+        <i class="fas fa-temperature-half icon"></i>
+        <h2>Nhiệt độ</h2>
+        <p id="nhietdo">-- °C</p>
+      </div>
+      <div class="card humidity-card">
+        <i class="fas fa-droplet icon"></i>
+        <h2>Độ ẩm</h2>
+        <p id="doam">-- %</p>
+      </div>
+      <div class="card light-card">
+        <i class="fas fa-sun icon"></i>
+        <h2>Ánh sáng</h2>
+        <p id="anhsang">-- Lux</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="card water-card">
+        <i class="fas fa-faucet icon"></i>
+        <h2>Phun sương</h2>
+        <p id="tuoinuoc">--</p>
+      </div>
+      <div class="card lamp-card">
+        <i class="fas fa-lightbulb icon"></i>
+        <h2>Đèn</h2>
+        <p id="trangthaid">--</p>
+      </div>
+      <div class="card curtain-card">
+        <i class="fas fa-window-maximize icon"></i>
+        <h2>Màn che</h2>
+        <p id="manche">--</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="giaodien.js"></script>
+</body>
+</html>
